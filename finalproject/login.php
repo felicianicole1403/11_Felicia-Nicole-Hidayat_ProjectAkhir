@@ -17,7 +17,6 @@ if(isset($_POST['login'])){
 
     if($user AND $password == $user['password']){
         $_SESSION['username'] = $user['username'];
-        $_SESSION['fullname'] = $user['fullname'];
         header("Location: Index2.html");
         exit;
     } else {
@@ -99,4 +98,5 @@ if(isset($_POST['login'])){
     </form>
   </div>
 </body>
+
 </html>
